@@ -1,0 +1,153 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+    commands:
+      - export TIMESTAMP=$(date +%Y%m%d%H%M%S)
+      - echo Installing dependencies for all subprojects...
+      # Download and Install chromedriver
+      - wget -N https://chromedriver.storage.googleapis.com/71.0.3578.80/chromedriver_linux64.zip -P ~/
+      - unzip ~/chromedriver_linux64.zip -d ~/
+      - rm ~/chromedriver_linux64.zip
+      - sudo mv -f ~/chromedriver /usr/local/bin/chromedriver
+      - sudo chown root:root /usr/local/bin/chromedriver
+      - sudo chmod 0755 /usr/local/bin/chromedriver
+
+      # Install chrome broswer
+      - echo Installing dependencies for all subprojects...
+      - sudo yum install -y https://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-126.0.6478.126-1.x86_64.rpm
+
+#      - wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+#      - sudo yum -y localinstall google-chrome-stable_current_x86_64.rpm
+#      - sudo yum -y upgrade google-chrome-stable
+
+      # Install allure
+      - echo Installing Allure command-line utility...
+      - curl -o allure-2.30.0.tgz -L https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.30.0/allure-commandline-2.30.0.tgz
+      - tar -zxvf allure-2.30.0.tgz
+      - export PATH=$PATH:$(pwd)/allure-2.30.0/bin
+
+      # install python requirements
+      - aws codeartifact login --tool pip --domain ime --domain-owner 365445763138 --repository tools
+      - echo Installing dependencies for all subprojects...
+      - python3 -m venv venv
+      - source venv/bin/activate
+      - cd packages/service/iMEApplicant && python3 build.py install
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEExternalUser && python3 build.py install
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEWebsite && python3 build.py install
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEBusiness && python3 build.py install
+      - pip install 'urllib3<2.0'
+      - pip install awscli
+
+
+  pre_build:
+    commands:
+      - |
+        if [ "$STAGE" == "uat" ]; then
+          export MAPPED_STAGE="UTA"
+        elif [ "$STAGE" == "staging" ]; then
+          export MAPPED_STAGE="STAGING"
+        else
+          export MAPPED_STAGE="UTA"
+        fi
+      - echo "Mapped Stage is" $MAPPED_STAGE
+      - # Clean allure-results folder to avoid conflicts from previous runs
+      - echo "Cleaning up allure-results from previous builds..."
+      - rm -rf allure-results || true
+      - mkdir allure-results
+      - echo Running pre-build steps for all subprojects...
+
+#      - cd $CODEBUILD_SRC_DIR
+#      - cd packages/service/iMEApplicant && python3 build.py pre_build --env=$MAPPED_STAGE
+#      - export ENV_STAGE=$MAPPED_STAGE
+#      - cd $CODEBUILD_SRC_DIR
+#      - cd packages/service/iMEExternalUser && python3 build.py pre_build
+#      - cd $CODEBUILD_SRC_DIR
+#      - cd packages/service/iMEWebsite && python3 build.py pre_build
+#      - cd $CODEBUILD_SRC_DIR
+#      - cd packages/service/iMEBusiness && python3 build.py pre_build
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEApplicant && python3 build.py pre_build --env=$MAPPED_STAGE
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEExternalUser && python3 build.py pre_build --env=$MAPPED_STAGE
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEWebsite && python3 build.py pre_build --env=$MAPPED_STAGE
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEBusiness && python3 build.py pre_build --env=$MAPPED_STAGE
+      - export ENV_STAGE=$MAPPED_STAGE
+
+
+
+  build:
+    commands:
+      - echo Running tests...
+      - cd $CODEBUILD_SRC_DIR
+      - pytest --alluredir=allure-results --junitxml=reports/result.xml
+      - echo Running tests...
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEApplicant && python3 build.py build --env=$MAPPED_STAGE
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEExternalUser && python3 build.py build --env=$MAPPED_STAGE
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEWebsite && python3 build.py build --env=$MAPPED_STAGE
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEBusiness && python3 build.py build --env=$MAPPED_STAGE
+
+  post_build:
+    commands:
+#      - echo Generating Allure report...
+#      - cd $CODEBUILD_SRC_DIR
+#      - cd packages/service/iMEApplicant && python3 build.py build --env=$MAPPED_STAGE
+##      - cd $CODEBUILD_SRC_DIR
+##      - cd packages/service/iMEExternalUser && python3 build.py post_build
+##      - cd $CODEBUILD_SRC_DIR
+##      - cd packages/service/iMEWebsite && python3 build.py post_build
+##      - cd $CODEBUILD_SRC_DIR
+##      - cd packages/service/iMEBusiness && python3 build.py post_build
+#      - $CODEBUILD_SRC_DIR
+#      - allure generate --clean --single-file
+#      - aws s3 cp allure-report/index.html s3://$REPORTS_BUCKET/$STAGE/${TIMESTAMP}.html
+
+      - echo Running post-build steps for all subprojects...
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEApplicant && python3 build.py post_build --env=$MAPPED_STAGE
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEExternalUser && python3 build.py post_build --env=$MAPPED_STAGE
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEWebsite && python3 build.py post_build --env=$MAPPED_STAGE
+      - cd $CODEBUILD_SRC_DIR
+      - cd packages/service/iMEBusiness && python3 build.py post_build --env=$MAPPED_STAGE
+
+      # Generate combined Allure report
+      - echo "Generating Allure report for all systems..."
+      - cd $CODEBUILD_SRC_DIR
+      # Ensure that the allure-results folder is cleaned
+#      - rm -rf allure-results  # Clean up previous allure results to avoid conflicts
+#      - allure generate --clean --output allure-report allure-results
+#      - allure generate --clean --single-file --output allure-report allure-results
+      - allure generate --clean --single-file
+      - echo "Allure report generated."
+      # Upload to S3
+      - echo "Uploading Allure report to S3..."
+      - aws s3 cp allure-report/index.html s3://$REPORTS_BUCKET/$STAGE/${TIMESTAMP}.html
+#      - aws s3 cp allure-report s3://$REPORTS_BUCKET/$STAGE/${TIMESTAMP}/ --recursive
+
+
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
+
+reports:
+  pytest_reports:
+    files:
+      - reports/result.xml
+    base-directory: .
+
+

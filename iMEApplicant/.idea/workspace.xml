@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="122717da-7843-4ab4-b20b-29648476183c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/build.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/service/iMEExternalUser/build.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buildspec.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../buildspec.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Admission.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Admission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Auditions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Auditions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Awards.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Awards.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/BasePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/LoginPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Marketing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Marketing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Multiway_Details.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Multiway_Details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/ProfilePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/ProfilePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Recruitments.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/Recruitments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/contentLibrary.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/contentLibrary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/iME_Queue_Multiway.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/iME_Queue_Multiway.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/iME_Queue_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/pageObjects/iME_Queue_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Admission_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Admission_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Auditions_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Auditions_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Awards_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Awards_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Content_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Content_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Learning_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Learning_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_LoginPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Marketing_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Marketing_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Multiway_Details.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Multiway_Details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Recruitment_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_Recruitment_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_iME_Queue_Multiway.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_iME_Queue_Multiway.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_iME_Queue_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEApplicant/testCases/test_iME_Queue_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Admission.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Admission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/AnalyticsPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/AnalyticsPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Audition.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Audition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Awards.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Awards.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/BasePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/BusinessProfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/BusinessProfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Create_Live_Stream.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Create_Live_Stream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Create_Upload_Stream.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Create_Upload_Stream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/IMEQueue.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/IMEQueue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Interview_Builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Interview_Builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/LoginPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Marketing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Marketing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Multimedia_create.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Multimedia_create.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Multiway_Details_View.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Multiway_Details_View.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Notification.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Notification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/One_Way_Interview_Details_View_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/One_Way_Interview_Details_View_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Question_Set.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Question_Set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Recruitments.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Recruitments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Streaming.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Streaming.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/TemplatePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/TemplatePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Template_Create.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/Template_Create.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/dataDriven.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/dataDriven.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/iME_Queue_Multiway_Creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/iME_Queue_Multiway_Creator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/iME_Queue_RatingPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/iME_Queue_RatingPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/iME_Video_Transcription.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/pageObjects/iME_Video_Transcription.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Admission_Interview_Details.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Admission_Interview_Details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Analytics_Page.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Analytics_Page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Audition_Interview_Details.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Audition_Interview_Details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Award_Interview_Details.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Award_Interview_Details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Business_Profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Business_Profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Create_Live_Stream.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Create_Live_Stream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Create_Upload_Stream.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Create_Upload_Stream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_ImeQueue_Details.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_ImeQueue_Details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Interview_Builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Interview_Builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Learning_Interview_Details.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Learning_Interview_Details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_LoginPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Marketing_Interview_Details.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Marketing_Interview_Details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Multimedia_Creation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Multimedia_Creation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Multiway_Interview_Details_View.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Multiway_Interview_Details_View.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Notification_Details.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Notification_Details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_One_Way_Interviews_Details_View.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_One_Way_Interviews_Details_View.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Question_Set_Creation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Question_Set_Creation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Recruitment_Interiview_Details.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Recruitment_Interiview_Details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Streaming.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Streaming.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Template_Creation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Template_Creation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Template_Details_View.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_Template_Details_View.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_data_driven.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_data_driven.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_iME_Queue_Multiway_Creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_iME_Queue_Multiway_Creator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_iME_Queue_Video_Trancription.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_iME_Queue_Video_Trancription.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_iMQ_Queue_Rating_Interviews.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEBusiness/testCases/test_iMQ_Queue_Rating_Interviews.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEExternalUser/pageObjects/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEExternalUser/pageObjects/LoginPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEExternalUser/pageObjects/Notification.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEExternalUser/pageObjects/Notification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEExternalUser/pageObjects/iME_Queue_RatingPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEExternalUser/pageObjects/iME_Queue_RatingPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEExternalUser/testCases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEExternalUser/testCases/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEExternalUser/testCases/test_LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEExternalUser/testCases/test_LoginPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEExternalUser/testCases/test_Notification_Details.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEExternalUser/testCases/test_Notification_Details.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEExternalUser/testCases/test_iMQ_Queue_Rating_Interviews.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEExternalUser/testCases/test_iMQ_Queue_Rating_Interviews.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/AboutUsPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/AboutUsPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/BlogPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/BlogPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/CaresPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/CaresPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/ContactUsPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/ContactUsPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/FaqPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/FaqPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/PricingPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/PricingPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/ServicePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/ServicePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/SocialMediaFooter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/SocialMediaFooter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/UserRegistrationPages.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/UserRegistrationPages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/exploreFooter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/exploreFooter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/iMEFooterPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/iMEFooterPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/legalFooter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/legalFooter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/resourceFooter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/pageObjects/resourceFooter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_AboutUs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_AboutUs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_Blog_Links.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_Blog_Links.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_CaresPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_CaresPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_ContactUs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_ContactUs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_ExploreFooter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_ExploreFooter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_FaqPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_FaqPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_LegalFooter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_LegalFooter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_PricingPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_PricingPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_ResourceFooter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_ResourceFooter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_ServicePage_Links.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_ServicePage_Links.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_SocialMediaFooter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_SocialMediaFooter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_UserRegistration.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_UserRegistration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_iMEFooter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../packages/service/iMEWebsite/testCases/test_iMEFooter.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../iMEApplicantStagging\exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2bc68OUlSNWObuAbhiQr14Kf7Vs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.iME_Queue_Page.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/prowe/PycharmProjects/frontend-automated-tests&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\prowe\PycharmProjects\iMEApplicantStagging" />
+      <recent name="C:\Users\prowe\PycharmProjects\iMEApplicantStagging\testCases" />
+      <recent name="C:\Users\prowe\PycharmProjects\iMEApplicantStagging\pageObjects" />
+      <recent name="C:\Users\prowe\PycharmProjects\iMEApplicantStagging\utilities" />
+      <recent name="C:\Users\prowe\PycharmProjects\iMEApplicantStagging\configs" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="122717da-7843-4ab4-b20b-29648476183c" name="Changes" comment="" />
+      <created>1706501859746</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706501859746</updated>
+    </task>
+    <servers />
+  </component>
+</project>

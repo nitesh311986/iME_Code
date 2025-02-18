@@ -1,0 +1,20 @@
+venv
+.idea
+.idea/*
+.DS_Store
+.pyc
+webhooks/node_modules
+webhooks/resources/*.json
+webhooks/.serverless
+*.log
+Logs/
+**/logs/
+**/*.log
+
+# Ignore Allure report files
+allure-results/
+allure-report/
+
+# Ignore Python bytecode files
+*.pyc
+__pycache__/

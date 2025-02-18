@@ -1,0 +1,40 @@
+version: 0.2
+
+env:
+  variables:
+    PYTHON_VERSION: "3.12.1"  # Specify the Python version
+
+phases:
+  install:
+    runtime-versions:
+      python: $PYTHON_VERSION
+    commands:
+      - echo Installing dependencies...
+      - pip install --upgrade pip
+      - pip install -r requirements.txt  # Install project dependencies
+
+  pre_build:
+    commands:
+      - echo Running pre-build steps...
+      - webdriver-manager update  # Update and install browser drivers
+
+  build:
+    commands:
+      - echo Running tests...
+      - pytest --alluredir=allure-results --junitxml=reports/result.xml  # Run tests and generate reports
+
+  post_build:
+    commands:
+      - echo Generating Allure report...
+      - allure generate --clean -o allure-report allure-results
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
+
+reports:
+  pytest_reports:
+    files:
+      - reports/result.xml
+    base-directory: .

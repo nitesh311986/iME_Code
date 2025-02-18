@@ -1,0 +1,22 @@
+webhook_run_tests:
+  handler:  handler/trigger_automated_tests.handler
+  description: This function triggers an automated tests session for a frontend build
+  layers:
+    - Ref: PythonRequirementsLambdaLayer
+  events:
+    - http:
+        path: webhook/run-tests
+        method: POST
+        cors: true
+
+build_test_report_notification:
+  handler: handler/build_report_notification.handler
+  layers:
+    - Ref: PythonRequirementsLambdaLayer
+  events:
+    - s3:
+        bucket: ${self:custom.terraform.reports_bucket_name.value}
+        event: s3:ObjectCreated:*
+        existing: true
+        rules:
+          - suffix: .html

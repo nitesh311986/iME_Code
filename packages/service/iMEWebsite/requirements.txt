@@ -1,0 +1,39 @@
+ # To install selenium=pip install selenium
+# To install webdriver manager=pip install webdriver_manager
+# To run test case parallely =pin install pytest-xdist
+# To generate html report= pip install pytest-html
+# To deal with excell =pip install openpyxl
+# To Integrate with Framework = pip install pytest
+# To generate Allure Report = pip install allure-pytest
+# Python Version  = 3.12.1
+
+# Selenium for Web Automation
+selenium
+
+# WebDriver Manager to handle browser drivers
+webdriver_manager
+
+# Test Framework
+pytest
+
+# Allure Reporting
+allure-pytest
+
+#HTML Reporting
+pytest-html
+
+# Markers
+pytest-mock
+
+
+# Handling Excel Files
+openpyxl
+
+# Handling JSON
+jsonschema
+
+# Additional Utilities
+requests
+
+#Run Test Case Parallely
+pytest-xdist

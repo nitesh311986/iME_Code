@@ -1,0 +1,18 @@
+packages/.DS_Store
+packages/resources/deployment-stack/.terraform.lock.hcl
+packages/resources/deployment-stack/.terraform
+packages/allure-*
+.DS_Store
+
+*.log
+Logs/
+**/logs/
+**/*.log
+
+# Ignore Allure report files
+allure-results/
+allure-report/
+
+# Ignore Python bytecode files
+*.pyc
+__pycache__/

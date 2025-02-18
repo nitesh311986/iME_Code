@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Logs/iME_Applicant_log_2024-11-26.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/Logs/iME_Applicant_log_2024-12-02.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/Logs/iME_Applicant_log_2025-01-30.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/Logs/iME_Business_log2024-09-19.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/Logs/iME_Business_log2024-12-02.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/Logs/iME_EndUser_log2024-07-19.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/Logs/iME_EndUser_log2024-07-30.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/Logs/iME_EndUser_log2024-08-05.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/packages/service/iMEApplicant/Document" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/packages/service/iMEBusiness/Document" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/packages/service/iMEBusiness/pageObjects/Application_Requirement.py" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/packages/service/iMEBusiness/pageObjects/Digital_Content_Create.py" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/packages/service/iMEBusiness/pageObjects/Digital_Content_View.py" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/packages/service/iMEBusiness/testCases/test_Application_Requirement.py" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/packages/service/iMEBusiness/testCases/test_Create_Digital_Content.py" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/packages/service/iMEBusiness/testCases/test_Digital_Content_View_Details.py" charset="windows-1252" />
+  </component>
+</project>

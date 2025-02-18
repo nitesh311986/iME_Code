@@ -1,0 +1,64 @@
+service: automated-tests
+package:
+  individually: true
+  patterns:
+    - '!node_modules/**'
+frameworkVersion: "3"
+configValidationMode: error
+
+plugins:
+  - serverless-python-requirements
+#  - serverless-openapi-documenter
+custom:
+  pythonRequirements:
+    noDeploy:
+      - botocore
+    useDownloadCache: false
+    useStaticCache: false
+    slim: true
+    slimPatterns:
+      - '**/*.so*'
+      - '**botocore/*'
+    strip: false
+    layer: true
+  crossDeployment:
+    TARGET_ACCOUNT_ID: '365445763138'
+    CROSS_ACCOUNT_ROLE: 'arn:aws:iam::*:role/CrossAccountDeployment'
+  terraform: ${file(./resources/terraform.json)}
+#  documentation: ${file(./app/documentation/serverless.doc.yml):documentation}
+
+params:
+  default:
+    name: "unknown"
+  dev:
+    name: ""
+
+provider:
+  name: aws
+  memorySize : 1024
+  deploymentBucket:
+    blockPublicAccess: true
+    skipPolicySetup: true
+    name: "serverless-deployment-${aws:accountId}-${aws:region}"
+  deploymentMethod: direct
+  runtime: python3.9
+
+  environment:
+    CODE_BUILD_PROJECT_NAME: ${self:custom.terraform.build_project_name.value}
+    SLACK_WEBHOOK_URL: ${self:custom.terraform.reports_slack_webhook.value}
+
+
+  region: ${env:REGION, 'eu-central-1'}
+  iam:
+     ${file(./resources/serverless.iam.yml)}
+  endpointType: REGIONAL
+  stackTags:
+    Service: ${self:service}
+  apiGateway:
+    disableDefaultEndpoint: true
+
+functions:
+  - ${file(./handler/serverless.functions.yml)}
+# Cloudformation resources can be defined directly using Cloudformation
+resources:
+  Resources: ${file(./resources/serverless.domain.yml)}

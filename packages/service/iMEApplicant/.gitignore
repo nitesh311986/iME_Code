@@ -1,0 +1,15 @@
+.DS_Store
+.idea
+# Ignore log files
+*.log
+Logs/
+**/logs/
+**/*.log
+
+# Ignore Allure report files
+allure-results/
+allure-report/
+
+# Ignore Python bytecode files
+*.pyc
+__pycache__/

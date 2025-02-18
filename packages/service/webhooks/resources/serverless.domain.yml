@@ -1,0 +1,28 @@
+  Domain:
+    Type: AWS::ApiGateway::DomainName
+    Properties:
+      RegionalCertificateArn: ${self:custom.terraform.automated_tests_service_acm_arn.value}
+      SecurityPolicy: TLS_1_2
+      DomainName: ${self:custom.terraform.automated_tests_service_domain.value}
+      EndpointConfiguration:
+        Types:
+          - REGIONAL
+
+  BasePathMapping:
+    DependsOn: "ApiGatewayDeployment${sls:instanceId}"
+    Type: AWS::ApiGateway::BasePathMapping
+    Properties:
+      BasePath: ""
+      DomainName: !Ref Domain
+      RestApiId: !Ref ApiGatewayRestApi
+      Stage: "dev"
+
+  DNS:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      Name: ${self:custom.terraform.automated_tests_service_domain.value}
+      HostedZoneId: ${self:custom.terraform.automated_tests_service_hosted_zone_id.value}
+      Type: A
+      AliasTarget:
+        DNSName: !GetAtt Domain.RegionalDomainName
+        HostedZoneId: !GetAtt Domain.RegionalHostedZoneId
